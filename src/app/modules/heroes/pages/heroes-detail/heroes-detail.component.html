@@ -1,0 +1,144 @@
+<div class="mt-10 container mx-auto">
+  <!-- Comprobar si es nuevo o ya existe -->
+  <p-card
+    header="{{
+      hero.id
+        ? ('heroesDetail.cardOf' | translate) + ' ' + hero.name
+        : ('heroesDetail.newHero' | translate)
+    }}"
+    styleClass="bg-slate-100"
+  >
+    <div class="grid grid-cols-3 gap-10">
+      <div>
+        @if (hero.image) {
+        <img src="{{ hero.image }}" />
+        }@else {
+        <img src="assets/imgs/no-hero-image.webp" />
+        }
+      </div>
+      <form [formGroup]="heroForm" class="w-full col-span-2" novalidate>
+        <div class="mb-5">
+          <label
+            for="name"
+            class="block mb-2 text-sm font-medium text-gray-900"
+            >{{ "heroesDetail.name" | translate }}</label
+          >
+          <input
+            pInputText
+            type="text"
+            id="name"
+            class="form-control w-full px-2 py-1 uppercase"
+            placeholder="{{ 'heroesDetail.namePlaceholder' | translate }}"
+            formControlName="name"
+          />
+          @if (heroForm.get('name')?.hasError('required') &&
+          heroForm.get('name')?.touched) {
+          <div class="form-error">
+            {{ "heroesDetail.nameRequiredError" | translate }}
+          </div>
+          }
+        </div>
+        <div class="mb-5">
+          <label
+            for="first_introduction"
+            class="block mb-2 text-sm font-medium text-gray-900"
+            >{{ "heroesDetail.firstIntro" | translate }}</label
+          >
+          <input
+            pInputText
+            type="text"
+            id="first_introduction"
+            class="form-control w-full px-2 py-1"
+            placeholder="{{ 'heroesDetail.firstIntroPlaceholder' | translate }}"
+            formControlName="first_introduction"
+          />
+          @if (heroForm.get('first_introduction')?.hasError('required') &&
+          heroForm.get('first_introduction')?.touched) {
+          <div class="form-error">
+            {{ "heroesDetail.firstIntroRequiredError" | translate }}
+          </div>
+          }
+        </div>
+        <div class="mb-5">
+          <label
+            for="publisher"
+            class="block mb-2 text-sm font-medium text-gray-900"
+            >{{ "heroesDetail.publisher" | translate }}</label
+          >
+          <input
+            pInputText
+            type="text"
+            id="publisher"
+            class="form-control w-full px-2 py-1"
+            placeholder="{{ 'heroesDetail.publisherPlaceholder' | translate }}"
+            formControlName="publisher"
+          />
+          @if (heroForm.get('publisher')?.hasError('required') &&
+          heroForm.get('publisher')?.touched) {
+          <div class="form-error">
+            {{ "heroesDetail.publisherRequiredError" | translate }}
+          </div>
+          }
+        </div>
+        <div class="mb-5">
+          <label
+            for="image"
+            class="block mb-2 text-sm font-medium text-gray-900"
+            >{{ "heroesDetail.url" | translate }}</label
+          >
+          <input
+            pInputText
+            type="text"
+            id="image"
+            class="form-control w-full px-2 py-1"
+            placeholder="{{ 'heroesDetail.urlPlaceholder' | translate }}"
+            formControlName="image"
+          />
+        </div>
+        <div class="mb-5">
+          <label
+            for="bio"
+            class="block mb-2 text-sm font-medium text-gray-900"
+            >{{ "heroesDetail.bio" | translate }}</label
+          >
+          <textarea
+            id="bio"
+            rows="10"
+            class="w-full px-2 py-1"
+            formControlName="bio"
+            placeholder="{{ 'heroesDetail.bioPlaceholder' | translate }}"
+          ></textarea>
+        </div>
+        <div class="form-actions flex justify-between">
+          <div class="left-actions">
+            @if(hero.id){
+            <p-button
+              pButton
+              label="{{ 'heroesDetail.deleteBtn' | translate }}"
+              (click)="delete()"
+              class="p-2 border bg-red-500 hover:bg-red-600"
+            ></p-button>
+            }
+          </div>
+          <div class="right-actions flex gap-2">
+            <p-button
+              pButton
+              label="{{ 'heroesDetail.cancelBtn' | translate }}"
+              (click)="cancel()"
+              class="p-2 border bg-slate-500 hover:bg-slate-600"
+            ></p-button>
+            <p-button
+              pButton
+              type="submit"
+              label="{{ 'heroesDetail.saveBtn' | translate }}"
+              (click)="save()"
+              class="p-2 border bg-green-500 hover:bg-green-600"
+            ></p-button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </p-card>
+</div>
+<p-toast></p-toast>
+<p-confirmDialog></p-confirmDialog>
