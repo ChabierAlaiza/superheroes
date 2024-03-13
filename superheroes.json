@@ -1,0 +1,184 @@
+{
+  "superheroes": [
+    {
+      "id": "1",
+      "name": "Batman",
+      "bio": "Batman is a fictional superhero appearing in American comic books published by DC Comics. The character was created by artist Bob Kane and writer Bill Finger, and first appeared in Detective Comics #27 in 1939.",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/10441.jpg",
+      "first_introduction": "Detective Comics #27",
+      "publisher": "DC Comics",
+      "deleted": "false"
+    },
+    {
+      "id": "2",
+      "name": "Superman",
+      "bio": "Superman is a fictional superhero. The character was created by writer Jerry Siegel and artist Joe Shuster, and first appeared in Action Comics #1, a comic book published on April 18, 1938.",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/791.jpg",
+      "first_introduction": "Action Comics #1",
+      "publisher": "DC Comics",
+      "deleted": "false"
+    },
+    {
+      "id": "3",
+      "name": "Spiderman",
+      "bio": "Spiderman is a fictional superhero. The character was created by writer Stan Lee and artist Steve Ditko, and first appeared in Amazing Fantasy #15, a comic book published on August 10, 1962.",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/10441.jpg",
+      "first_introduction": "Detective Comics #26",
+      "publisher": "Marvel Comics",
+      "deleted": "false"
+    },
+    {
+      "id": "4",
+      "name": "Thor",
+      "bio": "Thor is a fictional superhero. The character was created by writer Stan Lee and artist Jack Kirby, and first appeared in Journey into Mystery #83, a comic book published on August 28, 1962.",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/140.jpg",
+      "first_introduction": "Journey into Mystery #83",
+      "publisher": "Marvel Comics",
+      "deleted": "false"
+    },
+    {
+      "id": "5",
+      "name": "Wonder Woman",
+      "bio": "Wonder Woman is a fictional superhero. The character was created by writer William Moulton Marston and artist Harry G. Peter, and first appeared in All Star Comics #8, a comic book published on October 21, 1941.",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/807.jpg",
+      "first_introduction": "All Star Comics #8",
+      "publisher": "DC Comics",
+      "deleted": "false"
+    },
+    {
+      "id": "6",
+      "name": "Hulk",
+      "bio": "Hulk is a fictional superhero. The character was created by writer Stan Lee and artist Jack Kirby, and first appeared in The Incredible Hulk #1, a comic book published on May 1, 1962.",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/83.jpg",
+      "first_introduction": "The Incredible Hulk #1",
+      "publisher": "Marvel Comics",
+      "deleted": "false"
+    },
+    {
+      "id": "7",
+      "name": "Captain America",
+      "bio": "Captain America is a fictional superhero. The character was created by writer Joe Simon and artist Jack Kirby, and first appeared in Captain America Comics #1, a comic book published on March 1, 1941.",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/274.jpg",
+      "first_introduction": "Captain America Comics #1",
+      "publisher": "Marvel Comics",
+      "deleted": "false"
+    },
+    {
+      "id": "8",
+      "name": "IronMan",
+      "bio": "IronMan is a fictional superhero. The character was created by writer Stan Lee and artist Don Heck, and first appeared in Tales of Suspense #39, a comic book published on March 1, 1963.",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/85.jpg",
+      "first_introduction": "Tales of Suspense #39",
+      "publisher": "Marvel Comics",
+      "deleted": "false"
+    },
+    {
+      "id": "9",
+      "name": "Black Widow",
+      "bio": "Black Widow is a fictional superhero. The character was created by writer Stan Lee and artist Don Heck, and first appeared in Tales of Suspense #52, a comic book published on April 1, 1964.",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/131.jpg",
+      "first_introduction": "Tales of Suspense #52",
+      "publisher": "Marvel Comics",
+      "deleted": "false"
+    },
+    {
+      "id": "10",
+      "name": "Black Panther",
+      "bio": "Black Panther is a fictional superhero. The character was created by writer Stan Lee and artist Jack Kirby, and first appeared in Fantastic Four #52, a comic book published on July 1, 1966.",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/247.jpg",
+      "first_introduction": "Fantastic Four #52",
+      "publisher": "Marvel Comics",
+      "deleted": "false"
+    },
+    {
+      "id": "11",
+      "name": "AntMan",
+      "bio": "AntMan is a fictional superhero. The character was created by writer Stan Lee and artist Larry Lieber, and first appeared in Tales to Astonish #27, a comic book published on January 1, 1962.",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/956.jpg",
+      "first_introduction": "Tales to Astonish #27",
+      "publisher": "Marvel Comics",
+      "deleted": "false"
+    },
+    {
+      "id": "12",
+      "name": "Wolverine",
+      "bio": "Wolverine is a fictional superhero. The character was created by writer Roy Thomas and artist Len Wein, and first appeared in The Incredible Hulk #180, a comic book published on October 1, 1974.",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/310.jpg",
+      "first_introduction": "The Incredible Hulk #180",
+      "publisher": "Marvel Comics",
+      "deleted": "false"
+    },
+    {
+      "id": "13",
+      "name": "Deadpool",
+      "bio": "Deadpool is a fictional superhero. The character was created by writer Fabian Nicieza and artist Rob Liefeld, and first appeared in The New Mutants #98, a comic book published on February 1, 1991.",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/835.jpg",
+      "first_introduction": "The New Mutants #98",
+      "publisher": "Marvel Comics",
+      "deleted": "false"
+    },
+    {
+      "id": "14",
+      "name": "Flash",
+      "bio": "Flash is a fictional superhero. The character was created by writer Gardner Fox and artist Harry Lampert, and first appeared in Flash Comics #1, a comic book published on January 1, 1940.",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/925.jpg",
+      "first_introduction": "Flash Comics #1",
+      "publisher": "DC Comics",
+      "deleted": "false"
+    },
+    {
+      "id": "15",
+      "name": "Green Lantern",
+      "bio": "Green Lantern is a fictional superhero. The character was created by writer Bill Finger and artist Martin Nodell, and first appeared in All-American Comics #16, a comic book published on July 1, 1940.",
+      "image": "https://www.superherodb.com/gallery2/075/806/80663.webp",
+      "first_introduction": "All-American Comics #16",
+      "publisher": "DC Comics",
+      "deleted": "false"
+    },
+    {
+      "id": "16",
+      "name": "Aquaman",
+      "bio": "Aquaman is a fictional superhero. The character was created by writer Mort Weisinger and artist Paul Norris, and first appeared in More Fun Comics #73, a comic book published on November 1, 1941.",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/734.jpg",
+      "first_introduction": "More Fun Comics #73",
+      "publisher": "DC Comics",
+      "deleted": "false"
+    },
+    {
+      "id": "17",
+      "name": "Cyborg",
+      "bio": "Cyborg is a fictional superhero. The character was created by writer Marv Wolfman and artist George Pérez, and first appeared in DC Comics Presents #26, a comic book published on October 1, 1980.",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/1204.jpg",
+      "first_introduction": "DC Comics Presents #26",
+      "publisher": "DC Comics",
+      "deleted": "false"
+    },
+    {
+      "id": "18",
+      "name": "Green Arrow",
+      "bio": "Green Arrow is a fictional superhero. The character was created by writer Mort Weisinger and artist George Papp, and first appeared in More Fun Comics #73, a comic book published on November 1, 1941.",
+      "image": "https://www.superherodb.com/gallery2/075/198/19887.webp",
+      "first_introduction": "More Fun Comics #73",
+      "publisher": "DC Comics",
+      "deleted": "false"
+    },
+    {
+      "id": "19",
+      "name": "Martian Manhunter",
+      "bio": "Martian Manhunter is a fictional superhero. The character was created by writer Joseph Samachson and artist Joe Certa, and first appeared in Detective Comics #225, a comic book published on November 1, 1955.",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/733.jpg",
+      "first_introduction": "Detective Comics #225",
+      "publisher": "DC Comics",
+      "deleted": "false"
+    },
+    {
+      "id": "20",
+      "name": "shazam",
+      "bio": "Shazam is a fictional superhero. The character was created by writer Bill Parker and artist C. C. Beck, and first appeared in Whiz Comics #2, a comic book published on February 1, 1940.",
+      "image": "https://www.superherodb.com/pictures2/portraits/10/100/10220.jpg",
+      "first_introduction": "Whiz Comics #2",
+      "publisher": "DC Comics",
+      "deleted": "false"
+    }
+  ]
+}
