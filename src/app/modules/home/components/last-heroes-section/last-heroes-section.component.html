@@ -1,0 +1,22 @@
+<div class="container mx-auto mt-20">
+  <h2 class="text-3xl font-semibold text-center">
+    {{ "home.lastHeroesTitle" | translate }}
+  </h2>
+  <div class="grid grid-cols-2 md:grid-cols-3 mt-10 gap-10">
+    @for (hero of heroes; track $index) {
+    <app-hero-card
+      [hero]="hero"
+      (click)="view(hero.id)"
+      class="hover:cursor-pointer"
+    ></app-hero-card>
+    }
+  </div>
+  <div class="flex justify-center">
+    <p-button
+      pButton
+      label="{{ 'home.viewAllBtn' | translate }}"
+      class="mt-10"
+      (click)="viewAll()"
+    ></p-button>
+  </div>
+</div>

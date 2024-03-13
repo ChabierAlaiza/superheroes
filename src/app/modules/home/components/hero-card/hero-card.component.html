@@ -1,0 +1,14 @@
+@if(hero){
+    <p-card
+        header="{{ hero.name }}"
+        subheader="{{ hero.publisher }}"
+        class="hero-card"
+    >
+        <ng-template pTemplate="header">
+            <img alt="card-img" src="{{ hero.image }}" />
+        </ng-template>
+        <p>{{ hero.bio }}</p>
+    </p-card>
+} @else {
+    <h2>Loading</h2>
+}
