@@ -1,27 +1,68 @@
-# Superheroes
+# Angular Superhero Management App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+This Angular application allows you to manage superheroes. You can filter, create, edit, and delete superheroes with ease.
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Follow these steps to get the project up and running on your local machine.
 
-## Code scaffolding
+### Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Make sure you have Node.js and npm installed on your machine.
 
-## Build
+### Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone the repository:
 
-## Running unit tests
+```bash
+git clone https://github.com/ChabierAlaiza/superheroes
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Navigate to the project directory:
 
-## Running end-to-end tests
+```bash
+cd superheroes
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Install dependencies:
 
-## Further help
+```bash
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+4. Create a `.enviroment.ts` file based on the `.enviroment.example.ts` file.
+
+### Running the App
+
+To start the development server, run:
+
+```bash
+ng serve
+```
+
+Navigate to `http://localhost:4200/` in your browser to view the app.
+
+### Running the Mock Server
+
+To start the mock server, run:
+
+```bash
+npm run mock-server
+```
+
+The mock server will be available at `http://localhost:3000/`.
+
+## Features
+
+- **Filter and List View**: Filter superheroes by name with minimal event triggering. Edit or create new superheroes easily.
+- **Create / Edit**: Use a form to create or edit superheroes with necessary fields. Names are displayed in uppercase.
+- **Service**: Simulate API calls using observables. Mock server is provided.
+- **Loader**: Display a loader when fetching data to indicate loading state.
+- **Notifications**: Inform users about successful actions or errors with informative messages.
+
+## Additional Notes
+
+- **Angular Material**: Utilize Angular Material for visual components.
+- **Tests**: Add tests for components and services.
+- **Reactive Programming**: Utilize reactive programming techniques.
+- **Modularization**: Modularize components for better organization.
