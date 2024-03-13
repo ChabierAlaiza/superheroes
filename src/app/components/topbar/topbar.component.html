@@ -1,0 +1,30 @@
+<p-menubar
+  [model]="items"
+  styleClass="bg-slate-500 rounded-none text-white px-10 justify-between"
+>
+  <ng-template pTemplate="start">
+    <a routerLink="/">
+      <img
+        src="https://www.w2fly.es/assets/img/w2fly_logo.svg"
+        width="100"
+        class="mr-2"
+      />
+    </a>
+  </ng-template>
+  <ng-template pTemplate="end">
+    <div class="flex gap-5">
+      <img
+        src="https://flagicons.lipis.dev/flags/4x3/es.svg"
+        width="30"
+        class="cursor-pointer"
+        (click)="changeLanguage('es')"
+      />
+      <img
+        src="https://flagicons.lipis.dev/flags/4x3/gb.svg"
+        width="30"
+        class="cursor-pointer"
+        (click)="changeLanguage('en')"
+      />
+    </div>
+  </ng-template>
+</p-menubar>
