@@ -3,49 +3,22 @@
     {{ "heroesList.title" | translate }}
   </h1>
   <div class="flex justify-end mb-5">
-    <p-button
-      (click)="edit(0)"
-      pButton
-      label="{{ 'heroesList.addNewButton' | translate }}"
-      icon="pi pi-plus"
-      class="bg-blue-500 py-2"
-    ></p-button>
+    <p-button (click)="edit(0)" pButton label="{{ 'heroesList.addNewButton' | translate }}" icon="pi pi-plus"
+      class="bg-blue-500 py-2"></p-button>
   </div>
 
-  <p-table
-    [value]="heroes"
-    [lazy]="true"
-    (onLazyLoad)="loadData($event)"
-    [paginator]="true"
-    [rows]="10"
-    [loading]="loading"
-    [totalRecords]="totalRecords"
-    [showCurrentPageReport]="true"
+  <p-table [value]="heroes" [lazy]="true" (onLazyLoad)="loadData($event)" [paginator]="true" [rows]="10"
+    [loading]="loading" [totalRecords]="totalRecords" [showCurrentPageReport]="true"
     currentPageReportTemplate="Mostrando de {first} a {last} de un total de {totalRecords} entradas"
-    [rowsPerPageOptions]="[5, 10, 15, 20]"
-    [scrollable]="true"
-    [globalFilterFields]="['name']"
-    scrollHeight="flex"
-    paginatorDropdownAppendTo="body"
-  >
+    [rowsPerPageOptions]="[5, 10, 15, 20]" [scrollable]="true" [globalFilterFields]="['name']" scrollHeight="flex"
+    paginatorDropdownAppendTo="body">
     <ng-template pTemplate="caption">
       <div class="flex justify-between items-center">
-        <input
-          id="inputSearch"
-          pInputText
-          type="text"
-          (input)="loadData(lastGridEvent)"
-          [(ngModel)]="filters.name"
+        <input id="inputSearch" pInputText type="text" (input)="loadData(lastGridEvent)" [(ngModel)]="filters.name"
           class="form-control px-2 py-1 border border-slate-400 rounded w-2/5"
-          placeholder="{{ 'heroesList.nameFilterPlaceholder' | translate }}"
-        />
-        <p-button
-          pButton
-          label="{{ 'heroesList.clearFiltersButton' | translate }}"
-          class="btn bg-slate-500"
-          icon="pi pi-filter-slash"
-          (click)="clearFilters()"
-        ></p-button>
+          placeholder="{{ 'heroesList.nameFilterPlaceholder' | translate }}" />
+        <p-button pButton label="{{ 'heroesList.clearFiltersButton' | translate }}" class="btn bg-slate-500"
+          icon="pi pi-filter-slash" (click)="clearFilters()"></p-button>
       </div>
     </ng-template>
     <ng-template pTemplate="header" let-columns>
@@ -57,7 +30,7 @@
       </tr>
     </ng-template>
     <ng-template pTemplate="body" let-item let-columns="columns">
-      <tr (click)="edit(item.id)" class="cursor-pointer hover:bg-slate-100	">
+      <tr (dblclick)="edit(item.id)" class="cursor-pointer hover:bg-slate-100	">
         <td>
           <strong [innerHTML]="item.name | capitalize | highlight: filters.name">
           </strong>
@@ -65,18 +38,8 @@
         <td>{{ item.first_introduction }}</td>
         <td>{{ item.publisher }}</td>
         <td class="flex gap-2 justify-content-end">
-          <p-button
-            (click)="edit(item.id)"
-            pButton
-            icon="pi pi-pencil"
-            class="p-1 border bg-blue-500"
-          ></p-button>
-          <p-button
-            (click)="delete(item)"
-            pButton
-            icon="pi pi-trash"
-            class="p-1 border bg-red-500"
-          ></p-button>
+          <p-button (click)="edit(item.id)" pButton icon="pi pi-pencil" class="p-1 border bg-blue-500"></p-button>
+          <p-button (click)="delete(item)" pButton icon="pi pi-trash" class="p-1 border bg-red-500"></p-button>
         </td>
       </tr>
     </ng-template>

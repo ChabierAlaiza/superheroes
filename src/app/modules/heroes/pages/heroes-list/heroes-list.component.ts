@@ -45,7 +45,7 @@ export class HeroesListComponent {
     private router: Router,
     private confirmationService: ConfirmationService,
     private messageService: MessageService
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.lastGridEvent = {
@@ -110,7 +110,7 @@ export class HeroesListComponent {
 
       accept: () => {
         hero.deleted = 'true';
-        this.heroesService.save(hero).subscribe({
+        this.heroesService.update(hero).subscribe({
           next: (data: Hero) => {
             this.messageService.add({
               severity: 'info',
