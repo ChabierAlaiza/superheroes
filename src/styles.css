@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-error {
+    color: red;
+    font-size: 0.7rem;
+    margin-top: 5px;
+}
+
+/* Home */
+.banner {
+    background-image: url('assets/imgs/heroes-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Cards */
+.hero-card .p-card-header {
+    height: 600px;
+    overflow: hidden;
+}
+
+.hero-card .p-card-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Buttons */
+.btn-custom {
+    @apply px-4 py-2 rounded-md text-white;
+}
+
+/* Menú */
+
+.p-menuitem {
+    @apply bg-slate-500;
+}
+
+.p-menuitem-content:hover,
+.p-focus .p-menuitem-content {
+    @apply bg-slate-400
+}
+
+.p-menuitem-text {
+    @apply text-white;
+}
+
+.p-menuitem-icon {
+    @apply text-white;
+}
