@@ -1,0 +1,41 @@
+{
+    "home": {
+        "title": "Superheroes",
+        "subtitle": "Welcome to the Superheroes application",
+        "lastHeroesTitle": "Last Added Superheroes",
+        "viewAllBtn": "View All"
+    },
+    "heroesList": {
+        "title": "Superheroes List",
+        "addNewButton": "Create New",
+        "nameFilterPlaceholder": "Search by name",
+        "clearFiltersButton": "Clear Filters",
+        "nameTH": "Name",
+        "firstIntroTH": "First Introduction",
+        "publisherTH": "Publisher"
+    },
+    "topbar": {
+        "home": "Home",
+        "heroes": "Heroes"
+    },
+    "heroesDetail": {
+        "cardOf": "Card of",
+        "newHero": "New Superhero",
+        "name": "Name",
+        "namePlaceholder": "Superhero Name",
+        "nameRequiredError": "The name is required",
+        "firstIntro": "First Introduction",
+        "firstIntroPlaceholder": "Superhero First Introduction",
+        "firstIntroRequiredError": "The first introduction is required",
+        "bio": "Biography",
+        "bioPlaceholder": "Superhero Biography",
+        "url": "Image URL",
+        "urlPlaceholder": "Superhero Image URL",
+        "publisher": "Publisher",
+        "publisherPlaceholder": "Superhero Publisher",
+        "publisherRequiredError": "The publisher is required",
+        "saveBtn": "Save",
+        "cancelBtn": "Cancel",
+        "deleteBtn": "Delete"
+    }
+}

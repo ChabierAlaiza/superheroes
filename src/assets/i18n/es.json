@@ -1,0 +1,41 @@
+{
+    "home": {
+        "title": "Superhéroes",
+        "subtitle": "Bienvenido a la aplicación de Superhéroes",
+        "lastHeroesTitle": "Últimos Superhéroes Añadidos",
+        "viewAllBtn": "Ver Todos"
+    },
+    "heroesList": {
+        "title": "Lista de Superhéroes",
+        "addNewButton": "Crear Nuevo",
+        "nameFilterPlaceholder": "Buscar por nombre",
+        "clearFiltersButton": "Limpiar Filtros",
+        "nameTH": "Nombre",
+        "firstIntroTH": "Primera Aparición",
+        "publisherTH": "Editorial"
+    },
+    "topbar": {
+        "home": "Inicio",
+        "heroes": "Héroes"
+    },
+    "heroesDetail": {
+        "cardOf": "Ficha de",
+        "newHero": "Nuevo Superhéroe",
+        "name": "Nombre",
+        "namePlaceholder": "Nombre del Superhéroe",
+        "nameRequiredError": "El nombre es obligatorio",
+        "firstIntro": "Primera Aparición",
+        "firstIntroPlaceholder": "Primera Aparición del Superhéroe",
+        "firstIntroRequiredError": "La primera aparición es obligatoria",
+        "bio": "Biografía",
+        "bioPlaceholder": "Biografía del Superhéroe",
+        "url": "URL de la imagen",
+        "urlPlaceholder": "URL de la imagen del Superhéroe",
+        "publisher": "Editorial",
+        "publisherPlaceholder": "Editorial del Superhéroe",
+        "publisherRequiredError": "La editorial es obligatoria",
+        "saveBtn": "Guardar",
+        "cancelBtn": "Cancelar",
+        "deleteBtn": "Eliminar"
+    }
+}
