@@ -11,6 +11,13 @@
 npm-debug.log
 yarn-error.log
 
+# environments
+.environment.ts
+.environment.development.ts
+
+#json-server
+superheroes.json
+
 # IDEs and editors
 .idea/
 .project
