@@ -51,14 +51,14 @@ export class HeroesDetailComponent {
       name: '',
       bio: '',
       image: '',
-      first_introduction: '',
+      firstIntroduction: '',
       publisher: '',
       deleted: 'false',
     };
     this.heroForm = this.fb.group({
       name: new FormControl('', [Validators.required]),
       bio: new FormControl(''),
-      first_introduction: new FormControl('', [Validators.required]),
+      firstIntroduction: new FormControl('', [Validators.required]),
       image: new FormControl(''),
       publisher: new FormControl('', [Validators.required]),
     });

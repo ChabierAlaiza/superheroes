@@ -3,7 +3,7 @@ export interface Hero {
     name: string;
     bio: string;
     image: string;
-    first_introduction: string;
+    firstIntroduction: string;
     publisher: string;
     deleted: string;
 }

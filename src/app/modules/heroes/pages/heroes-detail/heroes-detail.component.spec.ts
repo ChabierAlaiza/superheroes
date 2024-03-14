@@ -108,7 +108,7 @@ describe('HeroesDetailComponent Create Heroe', () => {
     expect(component.heroForm.value).toEqual({
       name: '',
       bio: '',
-      first_introduction: '',
+      firstIntroduction: '',
       image: '',
       publisher: '',
     });

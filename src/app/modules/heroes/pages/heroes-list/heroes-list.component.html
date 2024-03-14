@@ -35,7 +35,7 @@
           <strong [innerHTML]="item.name | capitalize | highlight: filters.name">
           </strong>
         </td>
-        <td>{{ item.first_introduction }}</td>
+        <td>{{ item.firstIntroduction }}</td>
         <td>{{ item.publisher }}</td>
         <td class="flex gap-2 justify-content-end">
           <p-button (click)="edit(item.id)" pButton icon="pi pi-pencil" class="p-1 border bg-blue-500"></p-button>

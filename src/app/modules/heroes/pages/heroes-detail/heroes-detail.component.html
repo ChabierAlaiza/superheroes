@@ -27,12 +27,12 @@
           }
         </div>
         <div class="mb-5">
-          <label for="first_introduction" class="block mb-2 text-sm font-medium text-gray-900">{{
+          <label for="firstIntroduction" class="block mb-2 text-sm font-medium text-gray-900">{{
             "heroesDetail.firstIntro" | translate }}</label>
-          <input pInputText type="text" id="first_introduction" class="form-control w-full px-2 py-1"
-            placeholder="{{ 'heroesDetail.firstIntroPlaceholder' | translate }}" formControlName="first_introduction" />
-          @if (heroForm.get('first_introduction')?.hasError('required') &&
-          heroForm.get('first_introduction')?.touched) {
+          <input pInputText type="text" id="firstIntroduction" class="form-control w-full px-2 py-1"
+            placeholder="{{ 'heroesDetail.firstIntroPlaceholder' | translate }}" formControlName="firstIntroduction" />
+          @if (heroForm.get('firstIntroduction')?.hasError('required') &&
+          heroForm.get('firstIntroduction')?.touched) {
           <div class="form-error">
             {{ "heroesDetail.firstIntroRequiredError" | translate }}
           </div>
