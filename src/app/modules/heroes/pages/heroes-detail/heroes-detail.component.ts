@@ -81,14 +81,7 @@ export class HeroesDetailComponent {
           });
         }
       },
-      error: (error: any) => {
-        setTimeout(() => {
-          this.messageService.add({
-            severity: 'error',
-            summary: 'Error',
-            detail: 'No se pudo cargar el héroe',
-          });
-        }, 100);
+      error: () => {
         this.router.navigate(['heroes']);
       },
     });
@@ -124,12 +117,8 @@ export class HeroesDetailComponent {
         }, 100);
         this.router.navigate(['heroes']);
       },
-      error: (error: any) => {
-        this.messageService.add({
-          severity: 'error',
-          summary: 'Error',
-          detail: 'No se pudo guardar el héroe',
-        });
+      error: () => {
+        this.router.navigate(['heroes']);
       },
     });
   }
@@ -161,7 +150,7 @@ export class HeroesDetailComponent {
             }, 100);
             this.router.navigate(['heroes']);
           },
-          error: (error: any) => {
+          error: () => {
             this.messageService.add({
               severity: 'error',
               summary: 'Error',

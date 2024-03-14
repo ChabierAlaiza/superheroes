@@ -5,6 +5,7 @@ import { HeroCardComponent } from '../hero-card/hero-card.component';
 import { Router, RouterModule } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { TranslateModule } from '@ngx-translate/core';
+import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-last-heroes-section',
@@ -20,7 +21,8 @@ export class LastHeroesSectionComponent {
   constructor(
     private heroesService: HeroesService,
     private changeDetectorRef: ChangeDetectorRef,
-    private router: Router
+    private router: Router,
+    private messageService: MessageService
   ) { }
 
   ngOnInit() {
@@ -33,8 +35,8 @@ export class LastHeroesSectionComponent {
         this.heroes = data;
         this.heroes = this.heroes.slice(this.heroes.length - this.numberOfHeroes!);
       },
-      error: (error: any) => {
-        console.log(error);
+      error: () => {
+        this.messageService.add({ severity: 'error', summary: 'Error', detail: 'Error cargando héroes' });
       },
       complete: () => {
         this.changeDetectorRef.detectChanges();

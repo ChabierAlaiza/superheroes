@@ -79,8 +79,7 @@ export class HeroesListComponent {
         this.totalRecords = this.heroes.length;
         this.heroes = this.heroes.slice(event.first);
       },
-      error: (error: any) => {
-        console.error(error);
+      error: () => {
         this.messageService.add({
           severity: 'error',
           summary: 'Error',
@@ -119,7 +118,7 @@ export class HeroesListComponent {
             });
             this.loadData(this.lastGridEvent);
           },
-          error: (error: any) => {
+          error: () => {
             this.messageService.add({
               severity: 'error',
               summary: 'Error',
