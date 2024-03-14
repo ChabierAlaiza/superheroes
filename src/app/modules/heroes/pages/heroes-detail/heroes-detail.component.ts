@@ -35,15 +35,7 @@ import { Observable } from 'rxjs';
   styleUrl: './heroes-detail.component.css',
 })
 export class HeroesDetailComponent {
-  public hero: Hero = {
-    id: 0,
-    name: '',
-    bio: '',
-    image: '',
-    first_introduction: '',
-    publisher: '',
-    deleted: 'false',
-  };
+  public hero!: Hero;
   public heroForm!: FormGroup;
 
   constructor(
@@ -54,6 +46,15 @@ export class HeroesDetailComponent {
     private confirmationService: ConfirmationService,
     private messageService: MessageService
   ) {
+    this.hero = {
+      id: 0,
+      name: '',
+      bio: '',
+      image: '',
+      first_introduction: '',
+      publisher: '',
+      deleted: 'false',
+    };
     this.heroForm = this.fb.group({
       name: new FormControl('', [Validators.required]),
       bio: new FormControl(''),
@@ -76,11 +77,7 @@ export class HeroesDetailComponent {
         this.hero = data || this.hero;
         if (data) {
           this.heroForm.patchValue({
-            name: this.hero.name,
-            bio: this.hero.bio,
-            image: this.hero.image,
-            first_introduction: this.hero.first_introduction,
-            publisher: this.hero.publisher,
+            ...data,
           });
         }
       },
@@ -108,10 +105,10 @@ export class HeroesDetailComponent {
 
     let service: Observable<Hero>;
     if (this.hero.id == 0) {
-       const newHero = {
-         ...this.hero,
-         id: undefined
-       };
+      const newHero = {
+        ...this.hero,
+        id: undefined
+      };
       service = this.heroesService.save(newHero);
     } else {
       service = this.heroesService.update(this.hero);
