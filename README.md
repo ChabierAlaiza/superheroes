@@ -30,7 +30,11 @@ cd superheroes
 npm install
 ```
 
-4. Create a `.enviroment.ts` file based on the `.enviroment.example.ts` file.
+4. Create a `.environment.ts` and `.environment.development.ts` file based on the `.environment.example.ts` file.
+
+
+5. Make sure the environment path is correctly imported into `.heroes.service.ts`
+
 
 ### Running the App
 
